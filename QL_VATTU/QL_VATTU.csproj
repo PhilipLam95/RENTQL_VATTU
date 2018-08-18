@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8668D54-611F-4B71-A956-2CD5187A81BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL_VATTU</RootNamespace>
+    <AssemblyName>QL_VATTU</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MixedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.BonusSkins.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.CodeParser.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.DataAccess.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Office.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Pdf.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.1.Drawing, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Pdf.v16.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Printing.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.RichEdit.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Sparkline.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.Xpo.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraLayout.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraPrinting.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Debug\DevExpress.XtraReports.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Debug\DevExpress.XtraReports.v16.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraScheduler.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraScheduler.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\QL-VATTU-MASTER\QuanLyVatTu-master\QLYVATTU\bin\Release\DevExpress.XtraTreeList.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIST_ARRAY\ListDonDatHang.cs" />
+    <Compile Include="LIST_ARRAY\ListKho.cs" />
+    <Compile Include="LIST_ARRAY\ListLoaiVatTu.cs" />
+    <Compile Include="LIST_ARRAY\ListNhacungcap.cs" />
+    <Compile Include="LIST_ARRAY\ListNhanVien.cs" />
+    <Compile Include="LIST_ARRAY\ListPhieuNhap.cs" />
+    <Compile Include="LIST_ARRAY\ListVatTu.cs" />
+    <Compile Include="MODEL\Access.cs" />
+    <Compile Include="MODEL\ChiNhanh.cs" />
+    <Compile Include="MODEL\Connection.cs" />
+    <Compile Include="MODEL\DonDH.cs" />
+    <Compile Include="MODEL\HoaDon.cs" />
+    <Compile Include="MODEL\KhachHang.cs" />
+    <Compile Include="MODEL\MDNhaCungCap.cs" />
+    <Compile Include="MODEL\MDPhieuNhap.cs" />
+    <Compile Include="MODEL\NhanVien.cs" />
+    <Compile Include="MODEL\Report.cs" />
+    <Compile Include="MODEL\VatTu.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_VATTUDataSet.cs">
+      <DependentUpon>QL_VATTUDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_VATTUDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_VATTUDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\rptChiTietHangNhap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\rptChiTietHangNhap.Designer.cs">
+      <DependentUpon>rptChiTietHangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\rptChiTietHangXuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\rptChiTietHangXuat.Designer.cs">
+      <DependentUpon>rptChiTietHangXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\rptDanhSachNhanVien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\rptDanhSachNhanVien.Designer.cs">
+      <DependentUpon>rptDanhSachNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\rptDanhSachVatTu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\rptDanhSachVatTu.Designer.cs">
+      <DependentUpon>rptDanhSachVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\rptHoatDongNhanVien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\rptHoatDongNhanVien.Designer.cs">
+      <DependentUpon>rptHoatDongNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\rptThongKeNhapXuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\rptThongKeNhapXuat.Designer.cs">
+      <DependentUpon>rptThongKeNhapXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STACK\Command.cs" />
+    <Compile Include="STACK\KhoCommand.cs" />
+    <Compile Include="STACK\LoaiVTCommand.cs" />
+    <Compile Include="STACK\NhanVienCommand.cs" />
+    <Compile Include="STACK\VatTuCommand.cs" />
+    <Compile Include="VIEW\CTPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\CTPhieuXuat.Designer.cs">
+      <DependentUpon>CTPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\CT_PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\CT_PhieuNhap.Designer.cs">
+      <DependentUpon>CT_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DanhMucKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DanhMucKho.Designer.cs">
+      <DependentUpon>DanhMucKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DanhMucVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DanhMucVatTu.Designer.cs">
+      <DependentUpon>DanhMucVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DonDatHang.Designer.cs">
+      <DependentUpon>DonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DSNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DSNhanVien.Designer.cs">
+      <DependentUpon>DSNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\PhieuNhap.Designer.cs">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\PhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\PhieuXuat.Designer.cs">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\ChiTietHangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\ChiTietHangNhap.Designer.cs">
+      <DependentUpon>ChiTietHangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\DanhSachNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\DanhSachNhanVien.Designer.cs">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\DanhSachVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\DanhSachVatTu.Designer.cs">
+      <DependentUpon>DanhSachVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\HoatDongNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\REPORT_VIEW\HoatDongNhanVien.Designer.cs">
+      <DependentUpon>HoatDongNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\TaoTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\TaoTaiKhoan.Designer.cs">
+      <DependentUpon>TaoTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="REPORT\rptChiTietHangNhap.resx">
+      <DependentUpon>rptChiTietHangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\rptChiTietHangXuat.resx">
+      <DependentUpon>rptChiTietHangXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\rptDanhSachNhanVien.resx">
+      <DependentUpon>rptDanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\rptDanhSachVatTU.resx">
+      <DependentUpon>rptDanhSachVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\rptHoatDongNhanVien.resx">
+      <DependentUpon>rptHoatDongNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\rptThongKeNhapXuat.resx">
+      <DependentUpon>rptThongKeNhapXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\CTPhieuXuat.resx">
+      <DependentUpon>CTPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\CT_PhieuNhap.resx">
+      <DependentUpon>CT_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DanhMucKho.resx">
+      <DependentUpon>DanhMucKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DanhMucVatTu.resx">
+      <DependentUpon>DanhMucVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DonDatHang.resx">
+      <DependentUpon>DonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DSNhanVien.resx">
+      <DependentUpon>DSNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\PhieuNhap.resx">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\PhieuXuat.resx">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\REPORT_VIEW\ChiTietHangNhap.resx">
+      <DependentUpon>ChiTietHangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\REPORT_VIEW\DanhSachNhanVien.resx">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\REPORT_VIEW\DanhSachVatTu.resx">
+      <DependentUpon>DanhSachVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\REPORT_VIEW\HoatDongNhanVien.resx">
+      <DependentUpon>HoatDongNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\TaoTaiKhoan.resx">
+      <DependentUpon>TaoTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_VATTUDataSet.xsc">
+      <DependentUpon>QL_VATTUDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_VATTUDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_VATTUDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_VATTUDataSet.xss">
+      <DependentUpon>QL_VATTUDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VIEW\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IMAGE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
